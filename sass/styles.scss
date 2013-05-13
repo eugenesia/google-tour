@@ -1,0 +1,15 @@
+
+@import "base";
+
+article {
+	width: 940px;
+	margin: 0px auto;
+	padding: 10px;
+
+	@include box-shadow(0 0 20px #222);
+}
+
+section {
+	width: 200px;
+	border: 1px solid gray;
+}
