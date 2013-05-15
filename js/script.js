@@ -16,7 +16,22 @@
 (function(window, undefined) {
 
 window.onload = function() {
-	
+	var boxes = document.getElementsByClassName('box');
+
+	var boxWrapperWidth = 960;
+	var boxWrapperHeight = 960;
+
+	// Iterate thru boxes and set random positions.
+	for (var i=0; i<boxes.length; i++) {
+		
+		var elemStyle = boxes[i].style;
+
+		var left = boxWrapperWidth * Math.random();
+		elemStyle.left = left + 'px';
+
+		var right = boxWrapperHeight * Math.random();
+		elemStyle.top = right + 'px';
+	}
 };
 
-}(window);
+}(window));
