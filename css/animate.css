@@ -1,0 +1,423 @@
+/**
+ * Animation classes.
+ */
+/* line 10, ../sass/animate.scss */
+.anim-0 .box, .anim-1 .box {
+  display: none;
+}
+/* line 13, ../sass/animate.scss */
+.anim-0 .letter, .anim-1 .letter {
+  display: block;
+}
+
+/* line 23, ../sass/animate.scss */
+.anim-0 .box-wrapper {
+  opacity: 0;
+  left: 200%;
+}
+
+/* line 34, ../sass/animate.scss */
+.anim-1 #box-1 {
+  top: 0;
+  left: 0%;
+  -webkit-transition-delay: 0.08s;
+  -moz-transition-delay: 0.08s;
+  -o-transition-delay: 0.08s;
+  transition-delay: 0.08s;
+}
+/* line 34, ../sass/animate.scss */
+.anim-1 #box-2 {
+  top: 0;
+  left: 12%;
+  -webkit-transition-delay: 0.16s;
+  -moz-transition-delay: 0.16s;
+  -o-transition-delay: 0.16s;
+  transition-delay: 0.16s;
+}
+/* line 34, ../sass/animate.scss */
+.anim-1 #box-3 {
+  top: 0;
+  left: 24%;
+  -webkit-transition-delay: 0.24s;
+  -moz-transition-delay: 0.24s;
+  -o-transition-delay: 0.24s;
+  transition-delay: 0.24s;
+}
+/* line 34, ../sass/animate.scss */
+.anim-1 #box-4 {
+  top: 0;
+  left: 36%;
+  -webkit-transition-delay: 0.32s;
+  -moz-transition-delay: 0.32s;
+  -o-transition-delay: 0.32s;
+  transition-delay: 0.32s;
+}
+/* line 34, ../sass/animate.scss */
+.anim-1 #box-5 {
+  top: 0;
+  left: 48%;
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+/* line 34, ../sass/animate.scss */
+.anim-1 #box-6 {
+  top: 0;
+  left: 60%;
+  -webkit-transition-delay: 0.48s;
+  -moz-transition-delay: 0.48s;
+  -o-transition-delay: 0.48s;
+  transition-delay: 0.48s;
+}
+/* line 34, ../sass/animate.scss */
+.anim-1 #box-7 {
+  top: 0;
+  left: 72%;
+  -webkit-transition-delay: 0.56s;
+  -moz-transition-delay: 0.56s;
+  -o-transition-delay: 0.56s;
+  transition-delay: 0.56s;
+}
+/* line 34, ../sass/animate.scss */
+.anim-1 #box-8 {
+  top: 0;
+  left: 84%;
+  -webkit-transition-delay: 0.64s;
+  -moz-transition-delay: 0.64s;
+  -o-transition-delay: 0.64s;
+  transition-delay: 0.64s;
+}
+
+/* line 50, ../sass/animate.scss */
+.anim-2 .box-wrapper {
+  overflow: hidden;
+}
+/* line 55, ../sass/animate.scss */
+.anim-2 #box-1 {
+  left: 0%;
+  top: 20%;
+  width: 20%;
+  height: 20%;
+  background-color: red;
+  color: white;
+  -webkit-transition: width 0.5s ease-out;
+  -moz-transition: width 0.5s ease-out;
+  -o-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+}
+/* line 66, ../sass/animate.scss */
+.anim-2 #box-1 a {
+  color: blue;
+}
+/* line 70, ../sass/animate.scss */
+.anim-2 #box-1 .body {
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 75, ../sass/animate.scss */
+.anim-2 #box-1:hover {
+  overflow: visible;
+  height: auto;
+  width: 30%;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 20px black;
+  -moz-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+}
+/* line 84, ../sass/animate.scss */
+.anim-2 #box-1:hover .body {
+  visibility: visible;
+  opacity: 1.0;
+  -webkit-transition: opacity 1.5s ease-in;
+  -moz-transition: opacity 1.5s ease-in;
+  -o-transition: opacity 1.5s ease-in;
+  transition: opacity 1.5s ease-in;
+}
+/* line 55, ../sass/animate.scss */
+.anim-2 #box-2 {
+  left: 20%;
+  top: 40%;
+  width: 10%;
+  height: 60%;
+  background-color: orange;
+  color: black;
+  -webkit-transition: width 0.5s ease-out;
+  -moz-transition: width 0.5s ease-out;
+  -o-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+}
+/* line 66, ../sass/animate.scss */
+.anim-2 #box-2 a {
+  color: blue;
+}
+/* line 70, ../sass/animate.scss */
+.anim-2 #box-2 .body {
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 75, ../sass/animate.scss */
+.anim-2 #box-2:hover {
+  overflow: visible;
+  height: auto;
+  width: 30%;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 20px black;
+  -moz-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+}
+/* line 84, ../sass/animate.scss */
+.anim-2 #box-2:hover .body {
+  visibility: visible;
+  opacity: 1.0;
+  -webkit-transition: opacity 1.5s ease-in;
+  -moz-transition: opacity 1.5s ease-in;
+  -o-transition: opacity 1.5s ease-in;
+  transition: opacity 1.5s ease-in;
+}
+/* line 55, ../sass/animate.scss */
+.anim-2 #box-3 {
+  left: 20%;
+  top: 0%;
+  width: 20%;
+  height: 40%;
+  background-color: yellow;
+  color: black;
+  -webkit-transition: width 0.5s ease-out;
+  -moz-transition: width 0.5s ease-out;
+  -o-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+}
+/* line 66, ../sass/animate.scss */
+.anim-2 #box-3 a {
+  color: blue;
+}
+/* line 70, ../sass/animate.scss */
+.anim-2 #box-3 .body {
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 75, ../sass/animate.scss */
+.anim-2 #box-3:hover {
+  overflow: visible;
+  height: auto;
+  width: 30%;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 20px black;
+  -moz-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+}
+/* line 84, ../sass/animate.scss */
+.anim-2 #box-3:hover .body {
+  visibility: visible;
+  opacity: 1.0;
+  -webkit-transition: opacity 1.5s ease-in;
+  -moz-transition: opacity 1.5s ease-in;
+  -o-transition: opacity 1.5s ease-in;
+  transition: opacity 1.5s ease-in;
+}
+/* line 55, ../sass/animate.scss */
+.anim-2 #box-4 {
+  left: 40%;
+  top: 20%;
+  width: 20%;
+  height: 20%;
+  background-color: green;
+  color: white;
+  -webkit-transition: width 0.5s ease-out;
+  -moz-transition: width 0.5s ease-out;
+  -o-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+}
+/* line 66, ../sass/animate.scss */
+.anim-2 #box-4 a {
+  color: orange;
+}
+/* line 70, ../sass/animate.scss */
+.anim-2 #box-4 .body {
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 75, ../sass/animate.scss */
+.anim-2 #box-4:hover {
+  overflow: visible;
+  height: auto;
+  width: 30%;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 20px black;
+  -moz-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+}
+/* line 84, ../sass/animate.scss */
+.anim-2 #box-4:hover .body {
+  visibility: visible;
+  opacity: 1.0;
+  -webkit-transition: opacity 1.5s ease-in;
+  -moz-transition: opacity 1.5s ease-in;
+  -o-transition: opacity 1.5s ease-in;
+  transition: opacity 1.5s ease-in;
+}
+/* line 55, ../sass/animate.scss */
+.anim-2 #box-5 {
+  left: 40%;
+  top: 40%;
+  width: 20%;
+  height: 40%;
+  background-color: blue;
+  color: white;
+  -webkit-transition: width 0.5s ease-out;
+  -moz-transition: width 0.5s ease-out;
+  -o-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+}
+/* line 66, ../sass/animate.scss */
+.anim-2 #box-5 a {
+  color: orange;
+}
+/* line 70, ../sass/animate.scss */
+.anim-2 #box-5 .body {
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 75, ../sass/animate.scss */
+.anim-2 #box-5:hover {
+  overflow: visible;
+  height: auto;
+  width: 30%;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 20px black;
+  -moz-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+}
+/* line 84, ../sass/animate.scss */
+.anim-2 #box-5:hover .body {
+  visibility: visible;
+  opacity: 1.0;
+  -webkit-transition: opacity 1.5s ease-in;
+  -moz-transition: opacity 1.5s ease-in;
+  -o-transition: opacity 1.5s ease-in;
+  transition: opacity 1.5s ease-in;
+}
+/* line 55, ../sass/animate.scss */
+.anim-2 #box-6 {
+  left: 60%;
+  top: 0%;
+  width: 10%;
+  height: 20%;
+  background-color: indigo;
+  color: white;
+  -webkit-transition: width 0.5s ease-out;
+  -moz-transition: width 0.5s ease-out;
+  -o-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+}
+/* line 66, ../sass/animate.scss */
+.anim-2 #box-6 a {
+  color: orange;
+}
+/* line 70, ../sass/animate.scss */
+.anim-2 #box-6 .body {
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 75, ../sass/animate.scss */
+.anim-2 #box-6:hover {
+  overflow: visible;
+  height: auto;
+  width: 30%;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 20px black;
+  -moz-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+}
+/* line 84, ../sass/animate.scss */
+.anim-2 #box-6:hover .body {
+  visibility: visible;
+  opacity: 1.0;
+  -webkit-transition: opacity 1.5s ease-in;
+  -moz-transition: opacity 1.5s ease-in;
+  -o-transition: opacity 1.5s ease-in;
+  transition: opacity 1.5s ease-in;
+}
+/* line 55, ../sass/animate.scss */
+.anim-2 #box-7 {
+  left: 60%;
+  top: 40%;
+  width: 10%;
+  height: 20%;
+  background-color: violet;
+  color: black;
+  -webkit-transition: width 0.5s ease-out;
+  -moz-transition: width 0.5s ease-out;
+  -o-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+}
+/* line 66, ../sass/animate.scss */
+.anim-2 #box-7 a {
+  color: blue;
+}
+/* line 70, ../sass/animate.scss */
+.anim-2 #box-7 .body {
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 75, ../sass/animate.scss */
+.anim-2 #box-7:hover {
+  overflow: visible;
+  height: auto;
+  width: 30%;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 20px black;
+  -moz-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+}
+/* line 84, ../sass/animate.scss */
+.anim-2 #box-7:hover .body {
+  visibility: visible;
+  opacity: 1.0;
+  -webkit-transition: opacity 1.5s ease-in;
+  -moz-transition: opacity 1.5s ease-in;
+  -o-transition: opacity 1.5s ease-in;
+  transition: opacity 1.5s ease-in;
+}
+/* line 55, ../sass/animate.scss */
+.anim-2 #box-8 {
+  left: 70%;
+  top: 20%;
+  width: 30%;
+  height: 20%;
+  background-color: pink;
+  color: black;
+  -webkit-transition: width 0.5s ease-out;
+  -moz-transition: width 0.5s ease-out;
+  -o-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+}
+/* line 66, ../sass/animate.scss */
+.anim-2 #box-8 a {
+  color: blue;
+}
+/* line 70, ../sass/animate.scss */
+.anim-2 #box-8 .body {
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 75, ../sass/animate.scss */
+.anim-2 #box-8:hover {
+  overflow: visible;
+  height: auto;
+  width: 30%;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 20px black;
+  -moz-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+}
+/* line 84, ../sass/animate.scss */
+.anim-2 #box-8:hover .body {
+  visibility: visible;
+  opacity: 1.0;
+  -webkit-transition: opacity 1.5s ease-in;
+  -moz-transition: opacity 1.5s ease-in;
+  -o-transition: opacity 1.5s ease-in;
+  transition: opacity 1.5s ease-in;
+}

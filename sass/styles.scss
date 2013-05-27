@@ -2,32 +2,106 @@
 @import "base";
 
 body {
-	width: 960px;
-	margin: 0px auto;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
 
-	@include box-shadow(0 0 20px #222);
+	background-image: url(../images/beach_day_bg.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.page-title {
+	display: block;
+
+	height: 80px;
+	margin: 20px 0 20px;
+
+	background-image: url(../images/title.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+
+	// Hide the text away.
+	text-indent:-9999px;
 }
 
 article {
+	min-width: 960px;
+	max-width: 960px;
+	margin: 40px auto;
 }
 
 .box-container {
 	position: relative;
+	overflow: visible;
 
 	box-sizing: border-box;
 	width: 100%;
-	padding: 20px 10px;
-	min-height: 900px;
-	
+	height: 500px;
+	margin: 60px 0;
+}
+
+.box-wrapper {
+	display: block;
+	position: absolute;
+	z-index: 0;
+	overflow: hidden;
+
+	width: 200px;
+	left: -100px;
+
+	@include transition(left 1s, top 1s);
+
 }
 
 .box {
-	position: absolute;
-	display: block;
+	padding: 10px;
 
-	left: 50%;
-	top: 50%;
+	h2 {
+		margin: 10px 0;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 22px;
+	}
 
-	width: 200px;
-	border: 1px solid gray;
+	.body {
+		font-size: 12px;
+		line-height: 18px;
+	}
 }
+
+// Initial letter of alphabet.
+.letter {
+	// Don't show first.
+	display: none;
+
+	font-size: 100px;
+	line-height: 150px;
+	font-family: Verdana, Arial, sans-serif;
+
+	@for $i from 1 through 8 {
+		#box-#{$i} & {
+			color: nth($bg-colors, $i);
+		}
+	}
+}
+
+h1 {
+	display: block;
+	margin: 30px $gutter/2;
+
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+

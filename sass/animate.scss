@@ -1,0 +1,92 @@
+/**
+ * Animation classes.
+ */
+
+@import "base";
+
+
+// Show only the letter in the beginning.
+%letter-mode {
+	.box {
+		display: none;
+	}
+	.letter {
+		display: block;
+	}
+}
+
+// Init animations.
+.anim-0 {
+
+	@extend %letter-mode;
+
+	.box-wrapper {
+		opacity: 0;
+		left: 200%;
+	}
+}
+
+.anim-1 {
+
+	@extend %letter-mode;
+
+	@for $i from 1 through 8 {
+		#box-#{$i} {
+			top: 0;
+			left: ($i - 1) * 12%;
+			@include transition-delay($i * 0.08s);
+		}
+	}
+}
+
+
+.anim-2 {
+
+	$box-left:   (0 2 2 4 4 6 6 7);
+	$box-top:    (1 2 0 1 2 0 2 1);
+	$box-width:  (2 1 2 2 2 1 1 3);
+	$box-height: (1 3 2 1 2 1 1 1);
+
+	.box-wrapper {
+		overflow: hidden;
+	}
+
+	@for $i from 1 through 8 {
+		#box-#{$i} {
+			left: nth($box-left, $i) * 10%; 
+			top: nth($box-top, $i) * 20%;
+			width: nth($box-width, $i) * 10%;
+			height: nth($box-height, $i) * 20%;
+
+			background-color: nth($bg-colors, $i);
+			color: nth($fg-colors, $i);
+
+			@include transition(width 0.5s ease-out);
+
+			a {
+				color: nth($link-colors, $i);
+			}
+
+			.body {
+				visibility: hidden;
+				opacity: 0;
+			}
+
+			&:hover {
+				overflow: visible;
+				height: auto;
+				width: 3 * 10%;
+				// Bring in front of other boxes.
+				z-index: 100;
+
+				@include box-shadow(0 0 20px black);
+
+				.body {
+					visibility: visible;
+					opacity: 1.0;
+					@include transition(opacity 1.5s ease-in);
+				}
+			}
+		}
+	}
+}
